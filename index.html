@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InHaeEun Portfolio</title>
+  <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/jquery-1.12.4.js"></script>
+  <script src="./js/jquery.fullPage.js"></script>
+  <script src="https://kit.fontawesome.com/98f9029940.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <header>
+    <!-- logo -->
+    <h1 class="logo"><a href="#none">HeaEun</a></h1>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger-1" title="메뉴">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <div class="ham_menu">
+      <ul class="ham_menu_inner">
+          <li data-menuanchor="home">
+            <a href="#home" class="anchor">HOME</a>
+          </li>
+          <li data-menuanchor="about">
+            <a href="#about" class="anchor">ABOUT</a>
+          </li>
+          <li data-menuanchor="portfolio">
+            <a href="#skills" class="anchor">SKILLS</a>
+          </li>
+          <li data-menuanchor="design">
+            <a href="#publishin" class="anchor">PUBLISHIN</a>
+          </li>
+          <li data-menuanchor="contact">
+            <a href="#javascript" class="anchor">JAVASCRIPT</a>
+          </li>
+          <li data-menuanchor="contact">
+            <a href="#contact" class="anchor">CONTACT</a>
+          </li>
+      </ul>
+  </div>  
+    <!-- menu -->
+    <nav>
+      <ul id="menu">
+        <li data-menuanchor="home">
+          <a href="#home" class="anchor">HOME</a>
+        </li>
+        <li data-menuanchor="about">
+          <a href="#about" class="anchor">ABOUT</a>
+        </li>
+        <li data-menuanchor="skills">
+          <a href="#skills" class="anchor">SKILLS</a>
+        </li>
+        <li data-menuanchor="publishin">
+          <a href="#publishin" class="anchor">PUBLISHIN</a>
+        </li>
+        <li data-menuanchor="javascript">
+          <a href="#javascript" class="anchor">JAVASCRIPT</a>
+        </li>
+        <li data-menuanchor="contact">
+          <a href="#contact" class="anchor">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- wrap -->
+  <main id="fullpage">
+    <!-- home -->
+    <section class="section" data-anchor="home" id="sec-1">
+      <div class="container">
+        <div id="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="650px" height="650px" viewBox="0 0 300 300"
+                        enable-background="new 0 0 300 300" xml:space="preserve">
+                  <defs>
+                      <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                  </defs>
+                  <circle cx="150" cy="100" r="75" fill="none" />
+                    <g>
+                      <use xlink:href="#circlePath" fill="none" />
+                        <text fill="#000">
+                          <textPath xlink:href="#circlePath">
+                                    WELCOME TO MY PORTFOLIO
+                                    WELCOME TO MY PORTFOLIO
+                          </textPath>
+                        </text>
+                    </g>
+            </svg>
+        </div>
+        <!-- <div class="tit">HaeEun Protfolio</div> -->
+      </div> 
+    </section>
+
+    <!-- about -->
+    <section class="section" data-anchor="about" id="sec-2">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="intro-box">
+              <img src="./image/1.jpg" alt="me">
+          </div>
+          <div class="intro-txt">
+            <span class="intro-sub">인해은  1994. 08. 13</span>
+            <span class="intro-sub"></span>
+            <p class="intro-text"> 안녕하세요.
+              <br>신입 웹 퍼블리셔 & 프론트엔드를 지망하는 인해은입니다.<br>
+              최신 기술을 알기 위해 끊임없이 공부중입니다.<br>
+              코딩이라는 분야를 2022년 1월에 처음 접하게 되었습니다.<br>
+              전공이 아니어서 언어들이 생소했지만, 배우면서 흥미가 생겨 더 열심히 하게 되었습니다.<br>
+              최근에는 React에 관심이 생겨 공부를 하고 있습니다.<br></p>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="section" data-anchor="skills" id="sec-3">
+      <div class="container">
+        <div class="skill">
+          <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JQUERY</li>
+              <li>JAVASCRIPT</li>
+              <li>REACT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLISHIN -->
+    <section class="section" data-anchor="publishin" id="sec-4">
+          <div class="container out">
+              <div class="slide-warpper">
+                  <div class="flex-container flex-Lemaire flex-active" data-slide="1">                    
+                      <div class="flex-item flex-item--left">
+                          <div class="flex-content">
+                              <!-- <p class="text--sub">01</p> -->
+                              <h1 class="text-head">Lemaire</h1>
+                              <p class="text-m">웹사이트 전체를 구축하였고, 반응형 슬라이더, Aos플로그인을 이용한
+                                이용하여 다양한 웹사이트를 제작하였습니다.</p>
+                              <p class="w-txt-sub">기획 <strong>100%</strong>  디자인 <strong>100%</strong> 코딩 <strong>100%</strong></p>
+                              <a href="https://lemaire.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                          </div>
+                      </div>
+                      <div class="flex-item flex-item--right"></div>
+                      <img class="portfolio-img" src="./image/web1.png" alt="르메르 사이트 목업">
+                  </div>
+                  <!--// slider1 -->
+                  <div class="flex-container flex-sabon animate--start" data-slide="2">
+                      <div class="flex-item flex-item--left">
+                          <div class="flex-content">
+                              <!-- <p class="text--sub">02</p> -->
+                              <h1 class="text-head">Sabon</h1>
+                              <p class="text-m">웹사이트 전체를 구축하였고, 반응형 슬라이더, Aos플로그인을 이용한
+                                이용하여 다양한 웹사이트를 제작하였습니다.</p>
+                                <p class="w-txt-sub">기획 <strong>100%</strong>  디자인 <strong>100%</strong> 코딩 <strong>100%</strong></p> 
+                              <a href="https://sabon.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                          </div>
+                      </div>
+                      <div class="flex-item flex-item--right"></div>
+                      <img class="portfolio-img" src="./image/web2.png" alt="사봉 사이트 목업">
+                  </div>
+                  <!--// slider2 -->
+                  <div class="flex-container flex-dunst animate--start" data-slide="3">
+                      <div class="flex-item flex-item--left">
+                          <div class="flex-content">
+                              <!-- <p class="text--sub">03</p> -->
+                              <h1 class="text-head">Dunst</h1>
+                              <p class="text-m">웹사이트 디자인과 구축을 하였고 , 반응형 슬라이더, aos 플러그인과 스와이퍼를 이용하여 다양한 웹사이트를 제작하였습니다.</p>
+                              <p class="w-txt-sub">기획 <strong>100%</strong>  디자인 <strong>100%</strong> 코딩 <strong>100%</strong></p>
+                              <a href="https://dunst.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                          </div>
+                      </div>
+                      <div class="flex-item flex-item--right"></div>
+                      <img class="portfolio-img" src="./image/web3.png" alt="던스트 사이트 목업">
+                  </div>
+                  <!--// slider3 -->
+                  <div class="flex-container flex-landrover animate--start" data-slide="4">
+                      <div class="flex-item flex-item--left">
+                          <div class="flex-content">
+                              <!-- <p class="text--sub">05</p> -->
+                              <h1 class="text-head">landrover</h1>
+                              <p class="text-m">웹사이트 전체를 구축하였고,
+                                다양한 제이쿼리를 이용해 다양한 웹사이트를 제작하였습니다.</p>
+                                <p class="w-txt-sub">기획 <strong>100%</strong>  디자인 <strong>100%</strong> 코딩 <strong>100%</strong></p>
+                              <a href="https://landroverr.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                          </div>
+                      </div>
+                      <div class="flex-item flex-item--right"></div>
+                      <img class="portfolio-img" src="./image/web4.png" alt="랜드로버 사이트 목업">
+                  </div>
+              </div>
+              <!--// slider__warpper-->
+              <div class="slide-navi">
+                  <a href="#" class="slide-nav active" data-slide="1"></a>
+                  <a href="#" class="slide-nav" data-slide="2">Sabon</a>
+                  <a href="#" class="slide-nav" data-slide="3">Dunst</a>
+                  <a href="#" class="slide-nav" data-slide="4">landrover</a>
+                  <!-- <div class="click_btn_inf">
+                      Click Button
+                  </div> -->
+              </div>
+              <!--// slider__navi-->
+          </div>
+          <!--// site_list_container -->
+      </section>
+
+    <!-- javascript -->
+    <div class="section sec-5" data-anchor="javascript" id="sec-5">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="panel-img">
+                    <span class="fixed-num">01</span>
+                    <img src="./image/todolist.png" alt="img">
+                    <div class="panel-txt">
+                      <h3>To Do List</h3>
+                      <p class="sub-txt">자바스크립트를 이용하여 만든 To Do List</p>
+                      <div class="text">
+                        <p>자바스크립트를 이용하여 만든 TO DO LIST 입니다.<br>
+                          아이템 생성, 삭제, 상태표시 등 기능을 넣어보았습니다.</p>
+                          <a href="https://todolist-haeeun.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="panel-img">
+                  <span class="fixed-num">02</span>
+                  <img src="./image/num.png" alt="img">
+                  <div class="panel-txt">
+                    <h3>Random Number</h3>
+                    <p class="sub-txt">자바스크립트를 이용하여 만든 숫자 게임</p>
+                    <div class="text">
+                      <p>
+                        Math.random()과 Math.floor() 사용하여 만들었습니다.
+                        숫자 범위를 지정하고, 소수점을 자연수로 바꾸어 무작위로 숫자를 배열로 추출해 게임을 하는 방식으로 만들어 보았습니다.</p>
+                        <a href="https://numbergame-project.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="panel-img">
+                  <span class="fixed-num">03</span>
+                  <img src="./image/game.png" alt="img">
+                  <div class="panel-txt">
+                    <h3>ShooTing Game</h3>
+                    <p class="sub-txt">자바스크립트를 이용하여 만든 ShooTing Game</p>
+                    <div class="text">
+                      <p>방향키와 스페이스바로 움직여 작동하는 게임,
+                        Math.random(), Math.floor(), 이벤트 함수 등을 사용하여 만들었습니다.</p>
+                        <a href="https://shootinggame-project.netlify.app/" target="_blank" data-text="MoreView" class="button-hover">MoreView</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      </div>
+
+    <section class="section" data-anchor="contact" id="sec-6">
+      <div class="contact">
+          <h2>CONTACT</h2>
+          <div class="contact-box">
+            <div class="name-txt">HeaEun In</div>
+              <div class="mail">
+                  <p>E-mail</p>
+                  <p>9155867@naver.com</p>
+              </div>
+              <div class="Github">
+                  <p>Github</p>
+                  <a href="https://github.com/" target="_blank">https://github.com/haeeun-in</a>
+              </div> 
+          </div>
+      </div> 
+      <div class="rollingH ani">
+          <div class="rolling_box">
+              <div class="aniText">
+                  Thank you for reviewing my portfolio
+              </div>
+              <div class="aniText">
+                  Thank you for reviewing my portfolio
+              </div>
+          </div>
+      </div>
+  </section> 
+  </main>
+</body>
+</html>
