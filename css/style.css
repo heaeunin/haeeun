@@ -153,19 +153,20 @@ nav #menu li.active{
 .about-wrap{
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  position: relative;
+  /* margin: 0 auto; */
+  justify-content: space-evenly;
 }
 
 .intro-box{
-  width: 400px;
+  width: 30%;
   padding: 20px;
 }
 
 .intro-box img{
   width: 100%;
   transition: all 0.5s ease-out;
-  border-radius: 40px 80px / 80px 40px;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
 }
 
 .intro-box img:hover{
@@ -173,7 +174,8 @@ nav #menu li.active{
 }
 
 .intro-txt{
-  margin-left: 40px;
+  width: 50%;
+  margin-left: 4rem;
 }
 
 .intro-text {
